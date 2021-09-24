@@ -1,0 +1,8 @@
+button {        
+    background-color: #008a75; /* For browsers that do not support gradients */    
+    border: none;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 5%;
+    color: #fdfefe;
+}
