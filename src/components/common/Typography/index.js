@@ -27,7 +27,7 @@ const DefaultParagraph = ({ children }) => (
 );
 
 const DefaultLink = ({ children }) => (
-    <a className="DefaultLink">
+    <a className="DefaultLink" href="s">
         {children}
     </a>
 );

@@ -7,6 +7,7 @@ import {
 
 import Container from "../common/Container";
 import ApiResponse from "../../Api/ApiResponse";
+import ModalButton from "../common/ModalButton";
 
 
 class Body extends Component {
@@ -18,6 +19,7 @@ class Body extends Component {
               <Container>
                 <MainTitle>VUTTR</MainTitle>
                 <MainDescription>Very usefull tools to remember</MainDescription>
+                <ModalButton></ModalButton>
               </Container>              
               <ApiResponse></ApiResponse>      
             </Container> 

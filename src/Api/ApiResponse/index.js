@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { Component } from 'react';
 import Container from '../../components/common/Container';
 
@@ -11,16 +10,28 @@ import {
 
 import Api from '../Api';
 
-import ApiDApiDeleteBtn from '../ApiDelete';
-
-import './styles.css'
+import './styles.css';
 
 class ApiResponse extends Component {
 
-  state={
-    tools: [],
+  constructor(props){
+    super(props);
+
+    this.state = {
+      tools: [],
+    }
+
+    this.handleClick = this.handleClick.bind(this);
   }
 
+  handleClick(id) {
+    this.setState({
+      tools: this.state.tools.filter(function(tool) {
+        return tool.id !== id;
+      })
+    });
+  }
+  
   async componentDidMount(){
     const response = await Api.get('');   
 
@@ -42,20 +53,20 @@ class ApiResponse extends Component {
                   <button 
                     className="remove-button"
                     onClick={(id)=>{
-                      axios.delete(`http://localhost:3000/tools/${tool.id}`)
-
-                      this.setState(tools.filter(tool => tool.id !== id))                      
-                    }}                   
-                    >Remove
-                    </button>
+                      if(window.confirm("Tem certeza que desaja remover uma ferramenta?")){
+                        this.handleClick(tool.id)}}
+                      }
+                      >
+                    Remove
+                  </button>                  
                 </div>
                 <DefaultParagraph>{tool.description}</DefaultParagraph>
                 <DefaultLink>{tool.link}</DefaultLink>
                 <div className="tag">                  
-                {tool.tags.map(tag => (
-                  <p key={tag}>
-                    <DefaultBold>#{tag}</DefaultBold>
-                  </p>
+                  {tool.tags.map(tag => (
+                    <p key={tag}>
+                      <DefaultBold>#{tag}</DefaultBold>
+                    </p>
                 ))}
                 </div>
               </div>

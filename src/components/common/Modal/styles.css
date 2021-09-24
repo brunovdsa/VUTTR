@@ -6,15 +6,10 @@
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: rgba(0,0,0,.98);
+    background-color: rgba(0,0,0,.60);
     display: flex;
     justify-content: center;
     align-items: center;    
-}
-
-.container {    
-    color: #fdfefe;
-    border-radius: 20px;
 }
 
 .close-btn {
