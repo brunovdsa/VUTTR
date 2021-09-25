@@ -9,6 +9,10 @@ import Api from '../../Api/Api';
 
 function Form() {
 
+    function refreshPage(){ 
+        window.history.go(0); 
+    }
+
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [link, setLink] = useState('');
@@ -24,9 +28,8 @@ function Form() {
         link,
         tags: tagArr
         });
-    }
-
-  
+    };
+    
     return (
         <form onSubmit={addTool} id="add-tool-form">
             <h1>Add new tool!</h1>
@@ -74,7 +77,7 @@ function Form() {
                 />
             </div>
             <div className="btn-post">
-                <input type="submit" value="submit"/>
+                <input type="submit" value="submit" onClick={refreshPage}/>
             </div>                
         </form>
       );
