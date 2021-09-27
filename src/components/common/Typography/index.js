@@ -20,6 +20,12 @@ const DefaultTitle = ({ children }) => (
     </h2>
 );
 
+const SecondaryTitle = ({ children }) => (
+    <h3 className="SecondaryTitle">
+        {children}
+    </h3>
+)
+
 const DefaultParagraph = ({ children }) => (
     <p className="DefaultParagraph">
         {children}
@@ -43,6 +49,7 @@ export {
     MainTitle, 
     MainDescription, 
     DefaultTitle,
+    SecondaryTitle,
     DefaultParagraph,
     DefaultLink, 
     DefaultBold

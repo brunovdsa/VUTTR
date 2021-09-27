@@ -1,7 +1,14 @@
-.container {        
-    padding: 2rem;
+.container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
+    align-content: flex-start;
+    margin-top: 1em;
+}
+
+@media (min-width:1025px) {
+    .container {
+        margin-top: 3em;
+    }
 }

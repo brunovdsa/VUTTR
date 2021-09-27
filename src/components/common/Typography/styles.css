@@ -1,7 +1,98 @@
-.default-h1 {
-    color: red;
+.MainTitle {
+    text-align: left;
+    font: normal normal 600 42px / 50px Source Sans Pro;
+    font-size: 4.1em;
+    padding: 0.2em 0 0.2em 0;
+    letter-spacing: 0.84px;
+    color: #170C3A;
+    opacity: 1;
 }
 
-.default-h2 {
-    color: black;
+.MainDescription {
+    text-align: left;
+    font: normal normal 600 26px/32px Source Sans Pro;
+    font-size: 2.1em;
+    letter-spacing: 0.52px;
+    color: #170C3A;
+    opacity: 1;
+}
+
+.DefaultTitle {
+    text-align: left;
+    font: normal normal 600 42px/50px Source Sans Pro;
+    letter-spacing: 0.84px;
+    color: #170C3A;
+    opacity: 1;
+}
+
+.SecondaryTitle {
+    text-align: left;
+    font: normal normal 600 42px/50px Source Sans Pro;
+    font-size: 1.6em;
+    letter-spacing: 0.84px;
+    color: #170C3A;
+    opacity: 1; 
+}
+
+.DefaultParagraph{
+    text-align: left;
+    font: normal normal normal 20px/26px Source Sans Pro;
+    font-size: 1.6em;
+    letter-spacing: 0.4px;
+    color: rgba(23, 12, 58, 1);
+    opacity: 1;
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
+}
+
+.DefaultLink {
+    text-align: left;
+    font: normal normal normal 20px/26px Source Sans Pro;
+    font-size: 1.5em;
+    letter-spacing: 0.4px;
+    color: #68a4fe;
+    opacity: 1;
+    margin-top: 0.8em;
+    text-decoration: none;
+    margin-bottom: 1.8em;
+}
+
+.DefaultBold {
+    text-align: left;
+    font: normal normal normal 20px/26px Source Sans Pro;
+    font-size: 1.5em;
+    letter-spacing: 0.4px;
+    color: rgba(23, 12, 58, 1);
+    opacity: 1;
+}
+
+@media (min-width:1025px) {
+
+    .MainTitle {
+        font-size: 5em;
+    }
+
+    .MainDescription {
+        margin-top: 0.1em;
+        margin-bottom: 2em;
+    }
+
+    .DefaultTitle {
+        font-size: 3em;
+    }
+
+    .DefaultParagraph, .DefaultLink{
+        font-size: 1.9em;
+    }
+
+    .DefaultLink {
+        margin-top: 0;
+    }
+
+    .DefaultBold {
+        font-size: 1.8em;
+    }
+
+
+
 }

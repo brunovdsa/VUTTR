@@ -6,25 +6,27 @@
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: rgba(0,0,0,.60);
+    background: #170C3AE6 0% 0% no-repeat padding-box;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;    
 }
 
-.close-btn {
+#close-btn {
     border: none;
+
     background-color: transparent;
-    outline: none;
-
-    width: 22px;
-    height: 32px;  
-
-    right: calc(-100% + 64px);  
     
-    position: relative;    
+    right: calc(-79% + -38px);
+    
+
+    margin-bottom: -3em;
+    
+    position: relative;
+    
     display: flex;
-    align-items: center;  
+    align-items: center;
     
     cursor: pointer;
 }

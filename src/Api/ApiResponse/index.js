@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Container from '../../components/common/Container';
+import getTools from '../../components/common/SearchInput/index'
 
 import { 
   DefaultParagraph, 
@@ -18,11 +19,11 @@ class ApiResponse extends Component {
     super(props);
 
     this.state = {
-      tools: [],
+      tools: []
     }
-
     this.handleClick = this.handleClick.bind(this);
   }
+
 
   handleClick(id) {
     this.setState({
@@ -41,7 +42,7 @@ class ApiResponse extends Component {
   render() {
     
     const { tools } = this.state;
-        
+
     return (
       <div>
         <section className="main-section">  

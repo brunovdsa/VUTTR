@@ -1,0 +1,34 @@
+.search-bar {
+    background: #F5F4F6 0% 0% no-repeat padding-box;
+    border: 1px solid #EBEAED;
+    border-radius: 5px;
+    opacity: 1;
+    padding: 0.2em;
+    width: 17em;
+    height: 2.22em;
+}
+
+@media (min-width:1025px){
+    .search-bar{
+        width: 50em;
+        height: 3em;
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+    }
+
+    .checkbox input {
+        background: rgba(245, 244, 246, 1) 0% 0% no-repeat padding-box;
+        border: 1px solid rgba(222, 220, 225, 1);
+        opacity: 1;
+
+        width: 30px;
+        height: 20px;
+    }
+
+    .checkbox label {
+        font-size: 1.2em;
+    }
+}
