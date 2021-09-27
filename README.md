@@ -43,7 +43,5 @@ Escolhi usar [React](https://pt-br.reactjs.org/) por ser a ferramenta que atualm
 </p>
 <p aling="center">
     <img src="src/assets/to_readme/Home Mobile.png.png">
-</p>
-<p aling="center" justify="center">
     <img src="src/assets/to_readme/Add tool Mobile.png.png">
 </p>
