@@ -1,15 +1,8 @@
-
 import React, { useEffect, useState } from "react";
 
 import Api from '../../../Api/Api';
-import { 
-    DefaultParagraph, 
-    DefaultLink, 
-    DefaultBold, 
-    DefaultTitle 
-  } from '../Typography/index';
 
-  import './styles.css'
+import './styles.css'
 
 const SearchInput = () => {
 
@@ -24,11 +17,20 @@ const SearchInput = () => {
         } else {
             const response = await Api.get(`?q=${search}`);
             setTools(response.data);
+
+            tools.filter(tool => tool.title.includes(`'${search}'`)).map(filteredName => (
+              <li>
+                {filteredName}
+              </li>
+              ))
+            }          
         }
-    }
+
     useEffect(() => {
         getTools()
     }, [search]);
+
+    console.log(search)
   
     return(
         <div>
@@ -44,10 +46,10 @@ const SearchInput = () => {
                     <input type="checkbox" id="check" onChange={() => setTags(!tags)} />
                     <label htmlFor="check">Search by tags only!</label>
                 </div>
-                <div>
-                
-                </div>
             </form>
+            <div>
+            
+            </div>
         </div>
     )
 }

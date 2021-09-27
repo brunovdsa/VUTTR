@@ -8,4 +8,4 @@ const Container = ({ children }) => (
     </main>
 )
 
-export default Container
+export default Container;

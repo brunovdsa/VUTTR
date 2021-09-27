@@ -20,6 +20,12 @@ const DefaultTitle = ({ children }) => (
     </h2>
 );
 
+const DefaultBold = ({ children }) => (
+    <h2 className="DefaultBold">
+        {children}
+    </h2>
+);
+
 const SecondaryTitle = ({ children }) => (
     <h3 className="SecondaryTitle">
         {children}
@@ -38,11 +44,6 @@ const DefaultLink = ({ children }) => (
     </a>
 );
 
-const DefaultBold = ({ children }) => (
-    <h2 className="DefaultBold">
-        {children}
-    </h2>
-);
 
 
 export {

@@ -9,9 +9,16 @@
 }
 
 @media (min-width:1025px){
+    form {
+        width: 60em;
+        display: flex;
+        align-items: center;
+    }
+
     .search-bar{
-        width: 50em;
+        width: 35em;
         height: 3em;
+        font-size: 1.07em
     }
 
     .checkbox {

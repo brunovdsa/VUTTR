@@ -3,9 +3,6 @@ import React, {useState} from 'react';
 import { GoPlus } from 'react-icons/go';
 
 import { 
-    DefaultParagraph, 
-    DefaultLink, 
-    DefaultBold, 
     DefaultTitle,
     SecondaryTitle 
   } from '../../components/common/Typography/index';

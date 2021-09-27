@@ -31,22 +31,28 @@
     cursor: pointer;
 }
 
-.close-btn::before, .close-btn::after {
-    content: ' ';
+
+@media (min-width:1025px){
+    #container-modal{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    #close-btn {
+        border: none;
     
-    width: 2.5px;
-    height: 16px;
-
-    position: absolute;
-
-    background-color: #fdfefe;
+        background-color: transparent;
+        
+        right: calc(-85% + -38px);
+        
     
-    transform: rotate(40deg);
-
-    display: none;
-}
-
-.close-btn::after {
-
-    transform: rotate(-40deg);
+        margin-bottom: -3em;
+        
+        position: relative;
+        
+        display: flex;
+        align-items: center;
+        
+        cursor: pointer;
+    }
 }

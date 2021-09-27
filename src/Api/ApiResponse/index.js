@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Container from '../../components/common/Container';
-import getTools from '../../components/common/SearchInput/index'
 
 import { 
   DefaultParagraph, 
@@ -19,7 +18,7 @@ class ApiResponse extends Component {
     super(props);
 
     this.state = {
-      tools: []
+      tools: [],
     }
     this.handleClick = this.handleClick.bind(this);
   }
@@ -39,6 +38,18 @@ class ApiResponse extends Component {
     this.setState({tools: response.data});
   
   }
+
+  async deleteTool(id) {
+    await Api.delete('/' + id)
+
+    this.setState({
+      tools: this.state.tools.filter(function(tool) {
+        return tool.id !== id;
+      })
+    });
+
+  }
+
   render() {
     
     const { tools } = this.state;
@@ -47,7 +58,7 @@ class ApiResponse extends Component {
       <div>
         <section className="main-section">  
           <Container>
-            {tools.map(tool => (
+          {tools.map(tool => (
               <div key={tool.id} className="card">                
                 <div className="header-card">
                   <DefaultTitle>{tool.title}</DefaultTitle>
@@ -55,7 +66,7 @@ class ApiResponse extends Component {
                     className="remove-button"
                     onClick={(id)=>{
                       if(window.confirm("Tem certeza que desaja remover uma ferramenta?")){
-                        this.handleClick(tool.id)}}
+                        this.deleteTool(tool.id)}}
                       }
                       >
                     Remove
@@ -71,7 +82,7 @@ class ApiResponse extends Component {
                 ))}
                 </div>
               </div>
-            ))}            
+            ))}
           </Container>
           </section>       
       </div>        

@@ -95,3 +95,57 @@
     opacity: 1;
 }
 
+@media (min-width:1025px){
+
+    #add-tool-form{
+        padding: 6em;
+    }
+    
+    .fields label {
+        text-align: left;
+        
+        font: normal normal 600 20px/26px Source Sans Pro;
+        font-size: 1.2em;
+        letter-spacing: 0.4px;
+        color: #170C3A;
+        
+        opacity: 1;
+        
+    }
+    
+    .input-form {
+        background: #F5F4F6 0% 0% no-repeat padding-box;
+        
+        border: 1px solid #EBEAED;
+        
+        border-radius: 5px;
+        opacity: 1;
+        
+        padding: 0.2em;
+    
+        width: 100%;
+        height: 2.22em;
+        font: normal normal 600 20px/26px Source Sans Pro;
+        font-size: 1.2em;
+    }
+    
+    .btn-post input{
+        background: #365DF0 0% 0% no-repeat padding-box;
+        
+        border-radius: 5px;
+        
+        margin-top: 2em;
+    
+        width: 10em;
+        height: 2.6em;
+    
+        text-align: center;
+        
+        font: normal normal 600 18px/24px Source Sans Pro;
+        font-size: 1.61em;
+        letter-spacing: 0.36px;
+        color: rgba(255, 255, 255, 1);
+        opacity: 1;
+    }
+
+}

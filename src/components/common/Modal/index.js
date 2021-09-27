@@ -13,7 +13,7 @@ const Modal = ({ id = "modal", onClose= () => {}, children }) => {
 
     return (
         <div id={id} className="modal" onClick={handleOutsideClick}>
-            <div className="container">
+            <div className="container" id="container-modal">
                 <button id="close-btn" onClick={onClose}>
                     <GrClose />
                 </button>
