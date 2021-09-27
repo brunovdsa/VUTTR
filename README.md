@@ -39,11 +39,11 @@ Escolhi usar [React](https://pt-br.reactjs.org/) por ser a ferramenta que atualm
     <img src="src/assets/to_readme/Home 1920x1080.png.png">
 </p>
 <p aling="center">
-    <img src="src/assets/to_readme/Add tool 1920x1080.png">
+    <img src="src/assets/to_readme/Add tool 1920x1080.png.png">
 </p>
 <p aling="center">
-    <img src="src/assets/to_readme/Home Mobile.png">
+    <img src="src/assets/to_readme/Home Mobile.png.png">
 </p>
 <p aling="center">
-    <img src="src/assets/to_readme/Add tool Mobile.png">
+    <img src="src/assets/to_readme/Add tool Mobile.png.png">
 </p>
