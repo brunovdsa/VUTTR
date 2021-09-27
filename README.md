@@ -36,14 +36,14 @@ Escolhi usar [React](https://pt-br.reactjs.org/) por ser a ferramenta que atualm
 ## Screenshots
 
 <p aling="center">
-    <img src="src/assets/to_readme/Home 1920x1080">
+    <img src="src/assets/to_readme/Home 1920x1080.png">
 </p>
 <p aling="center">
-    <img src="src/assets/to_readme/Add tool 1920x1080">
+    <img src="src/assets/to_readme/Add tool 1920x1080.png">
 </p>
 <p aling="center">
-    <img src="src/assets/to_readme/Home Mobile">
+    <img src="src/assets/to_readme/Home Mobile.png">
 </p>
 <p aling="center">
-    <img src="src/assets/to_readme/Add tool Mobile">
+    <img src="src/assets/to_readme/Add tool Mobile.png">
 </p>
